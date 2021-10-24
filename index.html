@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Crachá</title>
+  </head>
+  <body>
+    <main>
+      <div class="gradient">
+        <div class="broken"></div>
+        <div class="ribbon"></div>
+
+        <div class="container">
+          <div class="avatar">
+            <span>
+              <img id="selo" src="images/selo.svg" alt="Selo Rocketseat"
+            /></span>
+            <img id="userImage" src="images/endrich.jpg" alt="Endrich.png" />
+          </div>
+          <h1 id="userName">Endrick</h1>
+          <a id="userLink" href="https://github.com/endrick.bm" target="_blank">
+            <img src="/nlw/images/github.svg" alt="icone github" />
+            <span id="userLogin"> endrick.bm</span></a
+          >
+          <p id="userBio">
+            Uma cara que não sabe direito se tá vivendo ou sobrevivendo!
+          </p>
+          <ul id="socialLinks">
+            <li class="youtube">
+              <a href="https://youtube.com" target="_blank"
+                ><img
+                  onmouseover="MudarLogoYouTube()"
+                  onmouseout="LogoYouTube()"
+                  id="yt"
+                  src="images/youtube.svg"
+                  alt="icone-youtube"
+              /></a>
+            </li>
+            <li class="instagram">
+              <a href="https://instagram.com" target="_blank"
+                ><img
+                  onmouseover="MudarLogoInstagram()"
+                  onmouseout="LogoInstagram()"
+                  id="insta"
+                  src="images/instagram.svg"
+                  alt="icone-instagram"
+              /></a>
+            </li>
+            <li class="facebook">
+              <a href="https://facebook.com" target="_blank"
+                ><img
+                  onmouseover="MudarLogoFacebook()"
+                  onmouseout="LogoFacebook()"
+                  id="face"
+                  src="images/facebook.svg"
+                  alt="icone-facebook"
+              /></a>
+            </li>
+
+            <!-- <li class="twitter">
+      <a href="https://twitter.com" target="_blank"
+        ><img src="images/twitter.svg" alt="icone-twitter"
+      /></a>
+    </li> -->
+          </ul>
+          <div id="hidden"><p>Passe o mouse nos ícones"</p></div>
+        </div>
+      </div>
+    </main>
+
+    <div class="dowhile">
+      <img
+        src="https://fhuffner91.github.io/NLW_desktopBadge/images/logo-do-while-2021.png"
+        alt="Imagem Do While
+"
+      />
+    </div>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="vanilla.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector('main'), {
+        max: 7,
+        speed: 300
+      })
+    </script>
+  </body>
+</html>
